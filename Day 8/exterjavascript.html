@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="demo.js">
+function demoInternalAlert(){
+    alert("Internal Alert")
+}
+function demoInternalconfirm(){
+    if(confirm("Are you sure?")){
+        alert("yess");
+    }
+    else{
+        alert("nooo")
+    }
+}
+function demoInternalprompt(){
+var fname=prompt("enter first name");
+var lname=prompt("enter last name");
+alert(fname+""+lname);
+}
+function bodyBGGreen(){
+document.body.style.backgroundColor="Green";
+}
+function divBGGray(){
+document.body.style.backgroundColor="white";
+}
+    </script>    
+</head>
+<body>
+    <input type="button" name="" id="" value="Alert Inine" onclick="alert('hello guys')"><br><br>
+    <input type="button" name="" id="" value="Confirm Inline" onclick="confirm('Are you sure')"><br><br>
+    <input type="button" name="" id="" value="Prompt inline" onclick="alert('Enter Firstname')">
+<hr>
+    <input type="button" name="" id="" value="Alert  Internal" onclick="demoInternalAlert()"><br><br>
+    <input type="button" name="" id="" value="Confirm Internal" onclick="demoInternalconfirm()"><br><br>
+    <input type="button" name="" id="" value="Prompt Internal" onclick="demoInternalprompt()">
+<hr>
+<input type="button" name="" id="" value="Alert  External" onclick="demoExternalAlert()"><br><br>
+<input type="button" name="" id="" value="Confirm External" onclick="demoExternalconfirm()"><br><br>
+<input type="button" name="" id="" value="Prompt External" onclick="demoExternalprompt()">
+<hr>
+<input type="button" name="" id="" value="Body Bg Green" onclick="bodyBGGreen()" ><br><br>
+<input type="button" name="" id="" value="Body Bg Gray" onclick="divsBGGray()" >
+
+
+
+</body>
+</html>
