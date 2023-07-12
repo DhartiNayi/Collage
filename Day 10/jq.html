@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo j query</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" type="text/javascript"></script>
+    <script>
+        $(document).ready(function(){
+            $("#flip").click(function(){
+                $("#panel").slideDown("slow");
+            });
+            $("#up").click(function(){
+                $("#panel").slideUp("slow");
+            })
+        });
+    </script>
+    <style>
+        #flip{
+            cursor: pointer;
+        }
+        #panel,#flip{
+            padding: 5px;
+            text-align: center;
+            background-color: #c5df69;
+            border: 1px solid  #69cddf;
+        }
+        #panel{
+            padding: 50px;
+            display: none;
+        }
+        #up{
+            background-color: rgb(57, 170, 179);
+            font-weight: 600;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="flip">click to down panel</div>
+    <div id="panel">Hello world <br><br>
+        <button id="up">Up</button>
+    </div>
+</body>
+</html>
